@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'General Sans', sans-serif;
+  background-color: #ffffff;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li, menu, p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-lg {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
