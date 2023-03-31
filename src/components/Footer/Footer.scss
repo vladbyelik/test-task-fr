@@ -1,8 +1,10 @@
+@import '../../variables.scss';
+
 .footer {
-  position: relative;
-  padding: 80px 0 67px;
   display: flex;
+  position: relative;
   justify-content: center;
+  padding: 80px 0 67px;
 
   &__btn {
     cursor: pointer;
@@ -13,13 +15,11 @@
       width: 300px;
       height: 64px;
       border-radius: 64px;
-      color: #ffffff;
+      color: $color-white;
       font-weight: 600;
       font-size: 16px;
-      background-color: #343434;
+      background-color: $color-mine-shaft;
       gap: 8px;
-
-
     }
 
     &--comment {
@@ -29,8 +29,8 @@
       width: 64px;
       height: 64px;
       border-radius: 24px;
-      color: #ffffff;
-      background: #E3A137;
+      color: $color-white;
+      background: $color-fire-bush;
       &-icon {
         width: 16px;
       }

@@ -1,21 +1,18 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+
+import classModifier from '../../utils/classModifier';
 
 import './Toggle.scss';
 
 const Toggle = () => {
-
   const [isActive, setIsActive] = useState();
 
-  const className = `toggle toggle--${isActive ? 'true' : 'false'}`;
-
-  const className2 = `toggle__indicator toggle__indicator--${isActive ? 'true' : 'false'}`;
-
   return (
-    <div
-      className={className}
+    <div 
       onClick={() => setIsActive(prevState => !prevState)}
+      className={classModifier('toggle', isActive && 'active')}
     >
-      <div className={className2} />
+      <div className={classModifier('toggle__indicator', isActive && 'active')} />
     </div>
   );
 };

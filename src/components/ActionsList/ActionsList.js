@@ -1,7 +1,11 @@
 import React from 'react';
+
 import ICONS from '../../assets/icons';
-import Toggle from '../Toggle/Toggle';
+import { mooji, slack, teams } from '../../assets/img';
+import classModifier from '../../utils/classModifier';
+
 import './ActionsList.scss';
+import Toggle from '../Toggle/Toggle';
 
 const ActionsList = () => {
   return (
@@ -25,11 +29,11 @@ const ActionsList = () => {
       <li className='actions-list__list-item'>
         <div className='actions-list__item-content'>
           <div className='actions-list__img-wrapper'>
-            <ICONS.people />
+            <img className={classModifier('actions-list__img', 'teams')} src={teams} alt="teams" />
           </div>
           <div className='actions-list__text-wrapper'>
             <h5 className='actions-list__item-title'>Microsoft Teams</h5>
-            <a href='#' className='actions-list__action actions-list__action--link'>
+            <a href='#' className={classModifier('actions-list__action', 'link')}>
               View app
             </a>
           </div>
@@ -41,11 +45,11 @@ const ActionsList = () => {
       <li className='actions-list__list-item'>
         <div className='actions-list__item-content'>
           <div className='actions-list__img-wrapper'>
-            <ICONS.slack /> 
+            <img className={classModifier('actions-list__img', 'slack')} src={slack} alt="slack" />
           </div>
           <div className='actions-list__text-wrapper'>
             <h5 className='actions-list__item-title'>Slack</h5>
-            <a href='#' className='actions-list__action actions-list__action--link'>
+            <a href='#' className={classModifier('actions-list__action', 'link')}>
               View app
             </a>
           </div>
@@ -57,11 +61,11 @@ const ActionsList = () => {
       <li className='actions-list__list-item'>
         <div className='actions-list__item-content'>
           <div className='actions-list__img-wrapper'>
-            <ICONS.circles />
+            <img className={classModifier('actions-list__img', 'mooji')} src={mooji} alt="mooji" />
           </div>
           <div className='actions-list__text-wrapper'>
             <h5 className='actions-list__item-title'>Mooji App</h5>
-            <a href='#' className='actions-list__action actions-list__action--link'>
+            <a href='#' className={classModifier('actions-list__action', 'link')}>
               View app
             </a>
           </div>
@@ -69,7 +73,6 @@ const ActionsList = () => {
 
         <Toggle />
       </li>
-
     </ul>
   )
 }

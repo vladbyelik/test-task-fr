@@ -1,13 +1,15 @@
+@import '../../variables.scss';
+
 .profile-btn {
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  border: 1px solid #ECECED;
+  border: 1px solid $color-athens-gray;
   border-radius: 16px;
-  color: #343434;
+  color: $color-mine-shaft;
   font-weight: 600;
   font-size: 14px;
   text-transform: capitalize;
-  background: #FAFAFA;
+  background-color: $color-alabaster;
   gap: 6px;
 }

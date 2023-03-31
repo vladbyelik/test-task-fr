@@ -1,5 +1,7 @@
+@import '../../variables.scss';
+
 .header {
-  border-bottom: 1px solid #ECECED;
+  border-bottom: 1px solid $color-athens-gray;
 
   &__wrapper {
     display: flex;
@@ -21,7 +23,7 @@
 
   &__menu {
     display: flex;
-    border-right: 1px solid black;
+    border-right: 1px solid $color-black;
     gap: 43px;
     padding: 11px 33px 10px 0;
 
@@ -29,7 +31,7 @@
       text-transform: uppercase;
       a {
         font-family: 'General Sans', sans-serif;
-        color: #343434;
+        color: $color-mine-shaft;
         font-weight: 600;
         font-size: 14px;
         line-height: 140%;
@@ -45,11 +47,11 @@
     margin-left: 16px;
     padding: 0 16px;
     border-radius: 64px;
-    color: #FFFFFF;
+    color: $color-white;
     font-weight: 600;
     font-family: 'General Sans', sans-serif;
     text-transform: uppercase;
-    background-color: #343434;
+    background-color: $color-mine-shaft;
     gap: 4px;
   }
 }

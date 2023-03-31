@@ -1,8 +1,10 @@
 import React from 'react';
-import ProfileBtn from '../ProfileBtn/ProfileBtn';
-import ICONS from '../../assets/icons'
+
+import ICONS from '../../assets/icons';
+import classModifier from '../../utils/classModifier';
 
 import './Profile.scss';
+import ProfileBtn from '../ProfileBtn/ProfileBtn';
 import ActionsList from '../ActionsList/ActionsList';
 
 const Profile = () => {
@@ -13,7 +15,7 @@ const Profile = () => {
       </h2>
 
       <div className='profile__main'>
-        <div className='profile__block profile__block--lg'>
+        <div className={classModifier('profile__block', 'lg')}>
           <div className='profile__top-wrapper'>
             <h3 className='profile__block-title'>
               Ghalia Alami
@@ -32,7 +34,7 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className='profile__block profile__block--lg'>
+        <div className={classModifier('profile__block', 'lg')}>
           <div className='profile__top-wrapper'>
             <h3 className='profile__block-title'>
               Your Focus Areas
@@ -45,7 +47,7 @@ const Profile = () => {
           </div>
 
           <div className='profile__subblock-wrapper'>
-            <div className='profile__block profile__block--sm'>
+            <div className={classModifier('profile__block', 'sm')}>
               <h4 className='profile__block-subtitle'>
                 Delegating Effectively
               </h4>
@@ -54,7 +56,7 @@ const Profile = () => {
               </p>
             </div>
 
-            <div className='profile__block profile__block--sm'>
+            <div className={classModifier('profile__block', 'sm')}>
               <h4 className='profile__block-subtitle'>
                 Goal Setting
               </h4>
@@ -63,7 +65,7 @@ const Profile = () => {
               </p>
             </div>
 
-            <div className='profile__block profile__block--sm'>
+            <div className={classModifier('profile__block', 'sm')}>
               <div className='profile__block-subtitle-content'>
                 <h4 className='profile__block-subtitle'>
                   Add Recommended Focus Areas
@@ -81,7 +83,7 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className='profile__block profile__block--lg profile__block--with-bg'>
+        <div className={classModifier('profile__block', ['lg', 'with-bg'])}>
           <h3 className='profile__block-title'>
             Discover your work style
           </h3>
@@ -91,14 +93,12 @@ const Profile = () => {
             <span>do things the way you do, and how you can thrive at work.</span>
           </p>
 
-          <button className='profile__block-btn profile__block-btn--arrow-right'>
-            <ICONS.arrowRight className='profile__block-btn-icon profile__block-btn-icon--arrow-right'/>
+          <button className={classModifier('profile__block-btn', 'arrow-right')}>
+            <ICONS.arrowRight className={classModifier('profile__block-btn-icon', 'arrow-right')}/>
           </button>
         </div>
 
-
-
-        <div className='profile__block profile__block--lg'>
+        <div className={classModifier('profile__block', 'lg')}>
           <h3 className='profile__block-title'>
             Actions delivery channels
           </h3>
@@ -110,7 +110,7 @@ const Profile = () => {
           <ActionsList />
         </div>
 
-        <div className='profile__block profile__block--lg'>
+        <div className={classModifier('profile__block', 'lg')}>
           <h3 className='profile__block-title'>
             Take a break
           </h3>
@@ -120,12 +120,12 @@ const Profile = () => {
             <span>off. It won’t affect your progress.</span>
           </p>
 
-          <button className='profile__block-btn profile__block-btn--action'>
+          <button className={classModifier('profile__block-btn', 'action')}>
             Pause actions
           </button>
         </div>
 
-        <div className='profile__block profile__block--lg'>
+        <div className={classModifier('profile__block', 'lg')}>
           <h3 className='profile__block-title'>
             Change Mooji time
           </h3>
@@ -135,11 +135,10 @@ const Profile = () => {
             <span>Currently: UTC+1.</span>
           </p>
 
-          <button className='profile__block-btn profile__block-btn--action'>
+          <button className={classModifier('profile__block-btn', 'action')}>
             Change time
           </button>
         </div>
-
       </div>
     </div>
   )
