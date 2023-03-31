@@ -5,7 +5,7 @@ import classModifier from '../../utils/classModifier';
 import './Toggle.scss';
 
 const Toggle = () => {
-  const [isActive, setIsActive] = useState();
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <div 
